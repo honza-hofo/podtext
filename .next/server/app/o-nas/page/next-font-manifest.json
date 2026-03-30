@@ -1,0 +1,13 @@
+{
+  "pages": {},
+  "app": {
+    "[project]/src/app/o-nas/page": [
+      "static/media/1bffadaabf893a1e-s.p.16ipb6fqu393i.woff2",
+      "static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2",
+      "static/media/b49b0d9b851e4899-s.p.0yfy_qj1.2qn0.woff2",
+      "static/media/2a65768255d6b625-s.p.14by5b4al-y~f.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": true,
+  "pagesUsingSizeAdjust": false
+}

@@ -1,0 +1,11 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/clanky/[slug]/page": "/clanky/[slug]",
+  "/favicon.ico/route": "/favicon.ico",
+  "/kontakt/page": "/kontakt",
+  "/o-nas/page": "/o-nas",
+  "/page": "/",
+  "/produkce/page": "/produkce",
+  "/redakce/page": "/redakce"
+}
