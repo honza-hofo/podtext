@@ -57,7 +57,7 @@ export default async function ArticlePage({ params }: Props) {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0F0F0F] via-[#0F0F0F]/50 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent" />
       </div>
 
       {/* Content */}
@@ -72,8 +72,8 @@ export default async function ArticlePage({ params }: Props) {
         </h1>
 
         {/* Byline */}
-        <div className="mt-6 flex items-center gap-4 text-sm text-gray-400 border-b border-[#2A2A2A] pb-6">
-          <span className="font-medium text-white">{article.author}</span>
+        <div className="mt-6 flex items-center gap-4 text-sm text-gray-600 border-b border-gray-200 pb-6">
+          <span className="font-medium text-gray-900">{article.author}</span>
           <span>&middot;</span>
           <span>{formatDate(article.date)}</span>
           <span>&middot;</span>
@@ -98,7 +98,7 @@ export default async function ArticlePage({ params }: Props) {
               return (
                 <blockquote
                   key={i}
-                  className="border-l-4 border-[#E8B84B] pl-6 py-2 my-8 text-xl text-gray-300 italic"
+                  className="border-l-4 border-[#E8B84B] pl-6 py-2 my-8 text-xl text-gray-600 italic"
                   style={{ fontFamily: "var(--font-heading), serif" }}
                 >
                   {p.replace("> ", "")}
@@ -106,7 +106,7 @@ export default async function ArticlePage({ params }: Props) {
               );
             }
             return (
-              <p key={i} className="text-gray-300 leading-relaxed text-lg">
+              <p key={i} className="text-gray-600 leading-relaxed text-lg">
                 {p}
               </p>
             );

@@ -53,7 +53,7 @@ export default function KontaktPage() {
               <div>
                 <label
                   htmlFor="name"
-                  className="block text-sm font-medium text-gray-300 mb-2"
+                  className="block text-sm font-medium text-gray-600 mb-2"
                 >
                   Jméno
                 </label>
@@ -65,7 +65,7 @@ export default function KontaktPage() {
                   onChange={(e) =>
                     setFormData({ ...formData, name: e.target.value })
                   }
-                  className="w-full px-4 py-3 bg-[#1A1A1A] border border-[#2A2A2A] rounded-lg text-white placeholder:text-gray-600 focus:outline-none focus:border-[#E8B84B] transition-colors"
+                  className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg text-gray-900 placeholder:text-gray-600 focus:outline-none focus:border-[#E8B84B] transition-colors"
                   placeholder="Vaše jméno"
                 />
               </div>
@@ -73,7 +73,7 @@ export default function KontaktPage() {
               <div>
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium text-gray-300 mb-2"
+                  className="block text-sm font-medium text-gray-600 mb-2"
                 >
                   Email
                 </label>
@@ -85,7 +85,7 @@ export default function KontaktPage() {
                   onChange={(e) =>
                     setFormData({ ...formData, email: e.target.value })
                   }
-                  className="w-full px-4 py-3 bg-[#1A1A1A] border border-[#2A2A2A] rounded-lg text-white placeholder:text-gray-600 focus:outline-none focus:border-[#E8B84B] transition-colors"
+                  className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg text-gray-900 placeholder:text-gray-600 focus:outline-none focus:border-[#E8B84B] transition-colors"
                   placeholder="vas@email.cz"
                 />
               </div>
@@ -93,7 +93,7 @@ export default function KontaktPage() {
               <div>
                 <label
                   htmlFor="type"
-                  className="block text-sm font-medium text-gray-300 mb-2"
+                  className="block text-sm font-medium text-gray-600 mb-2"
                 >
                   Typ projektu
                 </label>
@@ -104,7 +104,7 @@ export default function KontaktPage() {
                   onChange={(e) =>
                     setFormData({ ...formData, type: e.target.value })
                   }
-                  className="w-full px-4 py-3 bg-[#1A1A1A] border border-[#2A2A2A] rounded-lg text-white focus:outline-none focus:border-[#E8B84B] transition-colors appearance-none"
+                  className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg text-gray-900 focus:outline-none focus:border-[#E8B84B] transition-colors appearance-none"
                 >
                   <option value="" disabled>
                     Vyberte typ projektu
@@ -120,7 +120,7 @@ export default function KontaktPage() {
               <div>
                 <label
                   htmlFor="message"
-                  className="block text-sm font-medium text-gray-300 mb-2"
+                  className="block text-sm font-medium text-gray-600 mb-2"
                 >
                   Zpráva
                 </label>
@@ -132,7 +132,7 @@ export default function KontaktPage() {
                   onChange={(e) =>
                     setFormData({ ...formData, message: e.target.value })
                   }
-                  className="w-full px-4 py-3 bg-[#1A1A1A] border border-[#2A2A2A] rounded-lg text-white placeholder:text-gray-600 focus:outline-none focus:border-[#E8B84B] transition-colors resize-none"
+                  className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg text-gray-900 placeholder:text-gray-600 focus:outline-none focus:border-[#E8B84B] transition-colors resize-none"
                   placeholder="Popište svůj projekt nebo nápad..."
                 />
               </div>
@@ -154,7 +154,7 @@ export default function KontaktPage() {
             transition={{ delay: 0.4, duration: 0.6 }}
             className="lg:col-span-2 space-y-8"
           >
-            <div className="bg-[#1A1A1A] rounded-xl p-8 border border-[#2A2A2A]">
+            <div className="bg-white rounded-xl p-8 border border-gray-200">
               <h3
                 className="text-lg font-bold mb-6"
                 style={{ fontFamily: "var(--font-heading), serif" }}
@@ -167,10 +167,10 @@ export default function KontaktPage() {
                     <Mail className="w-5 h-5 text-[#E8B84B]" />
                   </div>
                   <div>
-                    <p className="text-sm text-gray-400">Email</p>
+                    <p className="text-sm text-gray-600">Email</p>
                     <a
                       href="mailto:info@podtext.cz"
-                      className="text-white hover:text-[#E8B84B] transition-colors"
+                      className="text-gray-900 hover:text-[#E8B84B] transition-colors"
                     >
                       info@podtext.cz
                     </a>
@@ -181,10 +181,10 @@ export default function KontaktPage() {
                     <Phone className="w-5 h-5 text-[#E8B84B]" />
                   </div>
                   <div>
-                    <p className="text-sm text-gray-400">Telefon</p>
+                    <p className="text-sm text-gray-600">Telefon</p>
                     <a
                       href="tel:+420777123456"
-                      className="text-white hover:text-[#E8B84B] transition-colors"
+                      className="text-gray-900 hover:text-[#E8B84B] transition-colors"
                     >
                       +420 777 123 456
                     </a>
@@ -195,8 +195,8 @@ export default function KontaktPage() {
                     <MapPin className="w-5 h-5 text-[#E8B84B]" />
                   </div>
                   <div>
-                    <p className="text-sm text-gray-400">Adresa</p>
-                    <p className="text-white">
+                    <p className="text-sm text-gray-600">Adresa</p>
+                    <p className="text-gray-900">
                       Karlín, Praha 8<br />
                       Česká republika
                     </p>
@@ -206,7 +206,7 @@ export default function KontaktPage() {
             </div>
 
             {/* Map placeholder */}
-            <div className="bg-[#1A1A1A] rounded-xl border border-[#2A2A2A] h-64 flex items-center justify-center">
+            <div className="bg-white rounded-xl border border-gray-200 h-64 flex items-center justify-center">
               <div className="text-center">
                 <MapPin className="w-8 h-8 text-[#E8B84B] mx-auto mb-2" />
                 <p className="text-sm text-gray-500">Karlín, Praha 8</p>

@@ -72,7 +72,7 @@ export default function HomePage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 0.6 }}
-            className="mt-8 text-lg md:text-xl text-gray-400 max-w-2xl mx-auto"
+            className="mt-8 text-lg md:text-xl text-gray-600 max-w-2xl mx-auto"
           >
             Video produkce, redakční tvorba a správa sociálních sítí. Pomáháme
             firmám vyprávět příběhy, které lidi zajímají.
@@ -116,7 +116,7 @@ export default function HomePage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.15, duration: 0.5 }}
-                className="bg-[#1A1A1A] rounded-xl p-8 border border-[#2A2A2A] hover:border-[#E8B84B]/30 transition-colors"
+                className="bg-white rounded-xl p-8 border border-gray-200 hover:border-[#E8B84B]/30 transition-colors"
               >
                 <div className="w-12 h-12 rounded-lg bg-[#E8B84B]/10 flex items-center justify-center mb-6">
                   <pillar.icon className="w-6 h-6 text-[#E8B84B]" />
@@ -127,7 +127,7 @@ export default function HomePage() {
                 >
                   {pillar.title}
                 </h3>
-                <p className="text-gray-400 text-sm leading-relaxed">
+                <p className="text-gray-600 text-sm leading-relaxed">
                   {pillar.description}
                 </p>
               </motion.div>
@@ -137,7 +137,7 @@ export default function HomePage() {
       </section>
 
       {/* Vybrané projekty */}
-      <section className="py-24 px-6 bg-[#0A0A0A]">
+      <section className="py-24 px-6 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -191,7 +191,7 @@ export default function HomePage() {
 
           <div className="relative">
             {/* Timeline line */}
-            <div className="hidden md:block absolute left-8 top-0 bottom-0 w-px bg-[#2A2A2A]" />
+            <div className="hidden md:block absolute left-8 top-0 bottom-0 w-px bg-gray-200" />
 
             <div className="space-y-12">
               {workflowSteps.map((step, i) => (
@@ -204,12 +204,12 @@ export default function HomePage() {
                   className="flex gap-8 items-start"
                 >
                   <div
-                    className="hidden md:flex flex-shrink-0 w-16 h-16 rounded-full bg-[#1A1A1A] border border-[#2A2A2A] items-center justify-center text-[#E8B84B] font-bold text-xl z-10"
+                    className="hidden md:flex flex-shrink-0 w-16 h-16 rounded-full bg-white border border-gray-200 items-center justify-center text-[#E8B84B] font-bold text-xl z-10"
                     style={{ fontFamily: "var(--font-heading), serif" }}
                   >
                     {step.number}
                   </div>
-                  <div className="flex-1 bg-[#1A1A1A] rounded-xl p-6 border border-[#2A2A2A]">
+                  <div className="flex-1 bg-white rounded-xl p-6 border border-gray-200">
                     <div className="flex items-center gap-3 mb-2">
                       <span
                         className="md:hidden text-[#E8B84B] font-bold"
@@ -224,7 +224,7 @@ export default function HomePage() {
                         {step.title}
                       </h3>
                     </div>
-                    <p className="text-gray-400 text-sm">{step.description}</p>
+                    <p className="text-gray-600 text-sm">{step.description}</p>
                   </div>
                 </motion.div>
               ))}
@@ -234,7 +234,7 @@ export default function HomePage() {
       </section>
 
       {/* Redakce */}
-      <section className="py-24 px-6 bg-[#0A0A0A]">
+      <section className="py-24 px-6 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -309,7 +309,7 @@ export default function HomePage() {
               (name) => (
                 <div
                   key={name}
-                  className="w-32 h-16 bg-[#1A1A1A] rounded-lg border border-[#2A2A2A] flex items-center justify-center text-gray-500 text-sm font-medium"
+                  className="w-32 h-16 bg-white rounded-lg border border-gray-200 flex items-center justify-center text-gray-500 text-sm font-medium"
                 >
                   {name}
                 </div>
@@ -326,7 +326,7 @@ export default function HomePage() {
             className="max-w-3xl mx-auto text-center"
           >
             <p
-              className="text-xl md:text-2xl text-gray-300 italic leading-relaxed"
+              className="text-xl md:text-2xl text-gray-600 italic leading-relaxed"
               style={{ fontFamily: "var(--font-heading), serif" }}
             >
               &ldquo;Podtext pro nás není dodavatel — je to partner, který
@@ -341,7 +341,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA Banner */}
-      <section className="py-24 px-6 bg-[#1A1A1A]">
+      <section className="py-24 px-6 bg-white">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -355,7 +355,7 @@ export default function HomePage() {
           >
             Máte příběh k vyprávění?
           </h2>
-          <p className="text-gray-400 text-lg mb-10 max-w-2xl mx-auto">
+          <p className="text-gray-600 text-lg mb-10 max-w-2xl mx-auto">
             Rádi se s vámi potkáme, poslechneme si váš nápad a navrhneme, jak ho
             proměnit v obsah, který zabere.
           </p>
