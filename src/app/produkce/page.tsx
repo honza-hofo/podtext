@@ -45,8 +45,8 @@ export default function ProdukcePage() {
               onClick={() => setActiveFilter(filter)}
               className={`px-5 py-2 rounded-full text-sm font-medium transition-all ${
                 activeFilter === filter
-                  ? "bg-[#E8B84B] text-[#0F0F0F]"
-                  : "bg-[#1A1A1A] text-gray-400 border border-[#2A2A2A] hover:border-[#E8B84B]/30"
+                  ? "bg-[#E8B84B] text-white"
+                  : "bg-white text-gray-600 border border-gray-200 hover:border-[#E8B84B]/30"
               }`}
             >
               {filter}

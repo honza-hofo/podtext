@@ -24,7 +24,7 @@ export default function ProjectCard({
     <motion.div
       whileHover={{ scale: 1.02, boxShadow: "0 8px 30px rgba(0,0,0,0.3)" }}
       transition={{ duration: 0.2 }}
-      className="group bg-[#1A1A1A] rounded-xl overflow-hidden border border-[#2A2A2A] hover:border-[#E8B84B]/30 transition-colors cursor-pointer"
+      className="group bg-white rounded-xl overflow-hidden border border-gray-200 hover:border-[#E8B84B]/30 transition-colors cursor-pointer"
     >
       <div className="relative h-56 overflow-hidden">
         <Image
@@ -39,7 +39,7 @@ export default function ProjectCard({
         {videoUrl && (
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="w-16 h-16 bg-[#E8B84B] rounded-full flex items-center justify-center shadow-lg shadow-[#E8B84B]/30 group-hover:scale-110 transition-transform">
-              <Play className="w-7 h-7 text-[#0F0F0F] ml-1" fill="#0F0F0F" />
+              <Play className="w-7 h-7 text-gray-900 ml-1" fill="currentColor" />
             </div>
           </div>
         )}
@@ -52,7 +52,7 @@ export default function ProjectCard({
         >
           {title}
         </h3>
-        <p className="mt-2 text-sm text-gray-400 line-clamp-2">{description}</p>
+        <p className="mt-2 text-sm text-gray-600 line-clamp-2">{description}</p>
       </div>
     </motion.div>
   );

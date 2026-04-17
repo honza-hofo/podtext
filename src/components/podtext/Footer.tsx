@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0A0A0A] border-t border-[#2A2A2A]">
+    <footer className="bg-gray-50 border-t border-gray-200">
       {/* Yellow accent line */}
       <div className="h-1 bg-[#E8B84B]" />
 
@@ -37,7 +37,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-gray-400 hover:text-white transition-colors"
+                    className="text-sm text-gray-400 hover:text-gray-900 transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -82,7 +82,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-16 pt-8 border-t border-[#2A2A2A] text-center text-sm text-gray-500">
+        <div className="mt-16 pt-8 border-t border-gray-200 text-center text-sm text-gray-500">
           &copy; {new Date().getFullYear()} Podtext. Všechna práva vyhrazena.
         </div>
       </div>

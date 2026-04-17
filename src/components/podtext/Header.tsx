@@ -37,13 +37,13 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-[#0F0F0F]/80 backdrop-blur-lg border-b border-[#2A2A2A]"
+          ? "bg-white/80 backdrop-blur-lg border-b border-gray-200"
           : "bg-transparent"
       }`}
     >
       <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-0">
-          <span className="font-[var(--font-heading)] text-2xl font-bold tracking-tight text-white"
+          <span className="font-[var(--font-heading)] text-2xl font-bold tracking-tight text-gray-900"
             style={{ fontFamily: "var(--font-heading), serif" }}
           >
             Podtext
@@ -57,7 +57,7 @@ export default function Header() {
             <li key={link.href}>
               <Link
                 href={link.href}
-                className="text-sm text-gray-300 hover:text-white transition-colors duration-200"
+                className="text-sm text-gray-600 hover:text-gray-900 transition-colors duration-200"
               >
                 {link.label}
               </Link>
@@ -67,7 +67,7 @@ export default function Header() {
 
         {/* Mobile hamburger */}
         <button
-          className="md:hidden text-white p-2"
+          className="md:hidden text-gray-900 p-2"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Menu"
         >
@@ -83,7 +83,7 @@ export default function Header() {
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
             transition={{ type: "tween", duration: 0.3 }}
-            className="fixed inset-0 top-0 bg-[#0F0F0F] z-40 flex flex-col pt-24 px-8"
+            className="fixed inset-0 top-0 bg-white z-40 flex flex-col pt-24 px-8"
           >
             <ul className="flex flex-col gap-6">
               {navLinks.map((link, i) => (
@@ -95,7 +95,7 @@ export default function Header() {
                 >
                   <Link
                     href={link.href}
-                    className="text-2xl font-medium text-white hover:text-[#E8B84B] transition-colors"
+                    className="text-2xl font-medium text-gray-900 hover:text-[#E8B84B] transition-colors"
                     style={{ fontFamily: "var(--font-heading), serif" }}
                     onClick={() => setMobileOpen(false)}
                   >

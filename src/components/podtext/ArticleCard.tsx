@@ -34,7 +34,7 @@ export default function ArticleCard({
         transition={{ duration: 0.2 }}
       >
         <Link href={href} className="group block">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-[#1A1A1A] rounded-xl overflow-hidden border border-[#2A2A2A] hover:border-[#E8B84B]/30 transition-colors">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-white rounded-xl overflow-hidden border border-gray-200 hover:border-[#E8B84B]/30 transition-colors">
             <div className="relative h-64 md:h-full overflow-hidden">
               <Image
                 src={image}
@@ -51,7 +51,7 @@ export default function ArticleCard({
               >
                 {title}
               </h3>
-              <p className="mt-4 text-gray-400 leading-relaxed">{excerpt}</p>
+              <p className="mt-4 text-gray-600 leading-relaxed">{excerpt}</p>
               <div className="mt-6 flex items-center gap-3 text-sm text-gray-500">
                 <span>{author}</span>
                 <span>&middot;</span>
@@ -97,9 +97,9 @@ export default function ArticleCard({
   // Standard variant
   return (
     <motion.div
-      whileHover={{ scale: 1.02, boxShadow: "0 8px 30px rgba(0,0,0,0.3)" }}
+      whileHover={{ scale: 1.02, boxShadow: "0 8px 30px rgba(0,0,0,0.08)" }}
       transition={{ duration: 0.2 }}
-      className="bg-[#1A1A1A] rounded-xl overflow-hidden border border-[#2A2A2A] hover:border-[#E8B84B]/30 transition-colors"
+      className="bg-white rounded-xl overflow-hidden border border-gray-200 hover:border-[#E8B84B]/30 transition-colors"
     >
       <Link href={href} className="group block">
         <div className="relative h-48 overflow-hidden">
@@ -118,7 +118,7 @@ export default function ArticleCard({
           >
             {title}
           </h3>
-          <p className="mt-2 text-sm text-gray-400 line-clamp-2">{excerpt}</p>
+          <p className="mt-2 text-sm text-gray-600 line-clamp-2">{excerpt}</p>
           <div className="mt-4 flex items-center gap-3 text-xs text-gray-500">
             <span>{author}</span>
             <span>&middot;</span>

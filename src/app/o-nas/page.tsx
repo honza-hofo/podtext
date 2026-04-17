@@ -87,7 +87,7 @@ export default function ONasPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1, duration: 0.5 }}
-                className="bg-[#1A1A1A] rounded-xl overflow-hidden border border-[#2A2A2A]"
+                className="bg-white rounded-xl overflow-hidden border border-gray-200"
               >
                 <div className="relative h-64">
                   <Image
@@ -135,7 +135,7 @@ export default function ONasPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.15, duration: 0.5 }}
-                className="bg-[#1A1A1A] rounded-xl p-8 border border-[#2A2A2A]"
+                className="bg-white rounded-xl p-8 border border-gray-200"
               >
                 <div className="w-12 h-12 rounded-lg bg-[#E8B84B]/10 flex items-center justify-center mb-6">
                   <value.icon className="w-6 h-6 text-[#E8B84B]" />
